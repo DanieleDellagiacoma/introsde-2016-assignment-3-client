@@ -10,7 +10,7 @@ The server is divided in the following packages and classes:
   
 The classes was generated executing the following command line, inside the src folder of client:
 ```sh
-wsimport -keep URL
+wsimport -keep https://davidelissoniassignment3.herokuapp.com/ws/people?wsdl
 ```
 
 The client runs each of 10 methods defined in server.
