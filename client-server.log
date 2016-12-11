@@ -1,0 +1,85 @@
+WSDL Document Location: https://davidelissoniassignment3.herokuapp.com/ws/people?wsdl
+
+Method #1: readPersonList()
+Result ==> OK
+IdPerson: 1 Firstname: Kobe Lastname: Bryant Birthdate: 1984-10-08T00:00:00Z
+IdMeasure: 1902 MeasureName: height Value: 178.6
+IdMeasure: 1903 MeasureName: heartRate Value: 65.0
+IdMeasure: 2112 MeasureName: bmi Value: 150
+
+IdPerson: 2 Firstname: Pallino Lastname: Pinco Birthdate: 1982-06-08T00:00:00Z
+IdMeasure: 852 MeasureName: bmi Value: 45
+IdMeasure: 1504 MeasureName: weight Value: 85.3
+
+IdPerson: 3 Firstname: Pappo Lastname: Pippo Birthdate: 1990-01-01T00:00:00Z
+IdMeasure: 952 MeasureName: weight Value: 72.5
+
+IdPerson: 4 Firstname: Allen Lastname: Iverson Birthdate: 1978-05-03T00:00:00Z
+IdMeasure: 1905 MeasureName: steps Value: 10000
+
+IdPerson: 5 Firstname: Gabriele Lastname: Pistolato Birthdate: 1992-07-02T00:00:00Z
+IdMeasure: 1906 MeasureName: heartRate Value: 70
+
+IdPerson: 6 Firstname: Giulio Lastname: Giulietti Birthdate: 1999-07-02T00:00:00Z
+IdMeasure: 1907 MeasureName: weight Value: 60
+IdMeasure: 1908 MeasureName: height Value: 150.4
+IdMeasure: 1909 MeasureName: steps Value: 15000
+IdMeasure: 1910 MeasureName: bloodPressure Value: 80.6
+
+IdPerson: 1107 Firstname: Mario Lastname: Rossi
+ Birthdate: 1939-11-03T00:00:00Z
+
+
+Method #2: readPerson(1)
+Result ==> OK
+IdPerson: 1 Firstname: Kobe Lastname: Bryant Birthdate: 1984-10-08T00:00:00Z
+IdMeasure: 1902 MeasureName: height Value: 178.6
+IdMeasure: 1903 MeasureName: heartRate Value: 65.0
+IdMeasure: 2112 MeasureName: bmi Value: 150
+
+
+Method #3: updatePerson(Person(Albert,Einstein,1987-11-17))
+Result ==> OK
+IdPerson: 4 Firstname: Albert Lastname: Einstein Birthdate: 1987-11-17T11:14:00Z
+IdMeasure: 1905 MeasureName: steps Value: 10000
+
+
+Method #4: createPerson(Person(Michael,Jordan,1980-10-15))
+Result ==> OK
+IdPerson: 3707 Firstname: Michael Lastname: Jordan Birthdate: 1980-10-15T11:14:00Z
+
+
+Method #5: deletePerson(3707)
+Result ==> OK
+
+
+Method #6: readPersonHistory(1, "weight")
+Result ==> OK
+IdMeasureHistory: 1 Value: 83 Timestamp: 2012-12-27T23:00:00Z
+IdMeasureHistory: 3 Value: 75 Timestamp: 2013-06-29T22:00:00Z
+IdMeasureHistory: 813 Value: 72 Timestamp: 2016-12-09T15:07:33Z
+
+
+Method #7: readMeasureTypes()
+Result ==> OK
+IdMeasureDef: 1 MeasureName: weight MeasureType: double
+IdMeasureDef: 2 MeasureName: height MeasureType: double
+IdMeasureDef: 3 MeasureName: steps MeasureType: integer
+IdMeasureDef: 4 MeasureName: bloodPressure MeasureType: double
+IdMeasureDef: 5 MeasureName: heartRate MeasureType: integer
+IdMeasureDef: 6 MeasureName: bmi MeasureType: double
+
+
+Method #8: readPersonMeasure(5, "hearthRate", 608)
+Result ==> OK
+IdMeasure: 608 Value: 65 Timestamp: 2016-11-20T16:49:50Z
+
+
+Method #9: savePersonMeasure(1, HealthProfile(weight,89)
+Result ==> OK
+IdMeasure: 4911 MeasureDef: weight Value: 89
+
+
+Method #10: updatePersonMeasure(6, HealthProfile(weight,47))
+Result ==> OK
+IdMeasure: 1907 MeasureDef: weight Value: 47
