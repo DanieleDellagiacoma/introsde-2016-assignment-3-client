@@ -7,7 +7,7 @@ Server URL of Davide Lissoni is: **https://davidelissoniassignment3.herokuapp.co
 Link to Davide Lissoni's Github server repository: **https://github.com/DavideLissoni/introsde-2016-assignment-3-server**
 
 ## IMPLEMENTATION
-The server is divided in the following packages and classes:
+The client is divided in the following packages and classes:
 
 * client
   * PeopleClient.java
