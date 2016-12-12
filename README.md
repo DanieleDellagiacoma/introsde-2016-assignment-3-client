@@ -1,5 +1,11 @@
 # introsde-2016-assignment-3-client
 
+I worked in pair with: **Davide Lissoni**
+
+Server URL of Davide Lissoni is: **https://davidelissoniassignment3.herokuapp.com/ws/people?wsdl**
+
+Link to Davide Lissoni's Github server repository: **https://github.com/DavideLissoni/introsde-2016-assignment-3-server**
+
 ## IMPLEMENTATION
 The server is divided in the following packages and classes:
 
